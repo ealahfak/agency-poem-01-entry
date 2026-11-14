@@ -6,10 +6,11 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const POEM = [
-  'The door was never locked.',
-  'I only had to find',
-  'that the key was mine,',
-  'and that my hand could turn.',
+  'They told me the machine decided,',
+  'and I believed them,',
+  'until I watched my own hand',
+  'reach for the switch',
+  'and turn it off.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
